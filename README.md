@@ -52,6 +52,29 @@
 
 ---
 
+## 📥 下载
+
+**📥 直链下载（v0.2.0-TEST）：**
+
+👉 **https://github.com/dhh4545-lgtm/antiformat/releases/download/v0.2.0-TEST/antiformat-kernelsu.zip**
+
+> 提示：该 Release 为 **Pre-release（预发布/测试版）**，不是正式版。
+
+## 📮 反馈 / 交流群（QQ）
+
+测试中遇到任何问题（死机、重启、防护失效、兼容性问题），请加入反馈群：
+
+| 群 | 群号 |
+|---|---|
+| 一群 | **863932624** |
+| 二群 | **994378564** |
+| 三群 | **454087230** |
+| 四群 | **1081449657** |
+
+> 反馈请附：设备型号、内核版本（`uname -r`）、模块日志（`/data/adb/modules/antiformat/antiformat.log`）、dmesg 相关输出。
+
+---
+
 ## 📥 安装方法
 
 1. 下载 `antiformat-kernelsu.zip`
