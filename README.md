@@ -39,6 +39,7 @@
 - ✅ **12 个 syscall hook**：open、write、pwrite64、ioctl（BLKZEROOUT/BLKDISCARD/FITRIM）、truncate、ftruncate、fallocate、unlinkat、renameat、mount、umount2、swapon/off
 - ✅ **64 进制 key 卸载认证**：加载时随机生成 8 位 key，无 key 无法卸载（rmmod 返回 EBUSY）
 - ✅ **永久驻留 + 逻辑卸载**：模块内存永不释放（根治卸载死机竞态），用 key 写节点可逻辑停用防护
+- ✅ **EPERM 指令拦截（不断进程）**：命中保护时仅拒绝该次系统调用（返回 -EPERM），不 kill 进程；格机工具可继续运行，但所有破坏操作被精准弹回
 - ✅ **开机自启**：KernelSU service.sh 等待系统完全启动后自动加载
 
 ---
@@ -93,7 +94,7 @@ cat /proc/modules | grep -i anti
 
 # 防护状态
 cat /proc/antiformat/status
-# 期望输出: disabled=0, 保护路径 127 条（含 persist/boot 等分区块）
+# 期望输出: disabled=0, 保护路径 126 条（含 persist/boot 等分区块，不含 /data/adb）
 
 # 模块加载日志
 cat /data/adb/modules/antiformat/antiformat.log
@@ -132,7 +133,9 @@ cat /proc/antiformat/status   # disabled=1
 - **启动链**：boot_a/b、init_boot_a/b、dtbo、vendor_boot、recovery、super、vbmeta 全套
 - **固件镜像**：modem_a/b、dsp、hyp、tz、bluetooth、keymaster、uefi、xbl 等
 
-**目录（前缀匹配）**：DCIM、Pictures、Movies、/data/adb、/sdcard/Download
+**目录（前缀匹配）**：DCIM、Pictures、Movies、/sdcard/Download
+
+> 🔧 **v0.2.0-TEST 修复说明**：`/data/adb` 不再列入默认保护。它是 KernelSU 模块安装/升级目录（`/data/adb/modules/`），保护会导致模块无法安装/升级；且模块已 insmod 驻留内核，攻击者删除该目录不影响防护，故无保护价值。
 
 > 注：userdata（用户数据）、rawdump（崩溃转储）、hybridswap（交换）、metadata（FBE 元数据）默认**不保护**（需系统可写）。
 
