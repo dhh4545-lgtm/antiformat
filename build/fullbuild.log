@@ -1,0 +1,101 @@
+nohup: ignoring input
+  REMOVE  arch/arm64/include/generated/uapi/asm/kvm_para.h
+  WRAP    arch/arm64/include/generated/asm/cfi.h
+  REMOVE  arch/arm64/include/generated/asm/cpucaps.h arch/arm64/include/generated/asm/early_ioremap.h arch/arm64/include/generated/asm/mcs_spinlock.h arch/arm64/include/generated/asm/parport.h arch/arm64/include/generated/asm/qrwlock.h arch/arm64/include/generated/asm/qspinlock.h arch/arm64/include/generated/asm/sysreg-defs.h arch/arm64/include/generated/asm/user.h
+  HOSTCC  scripts/unifdef
+find: ‘./Documentation/devicetree/bindings/media/spi’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/media/xilinx’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/memory-controllers’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/mfd’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/mips’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/misc’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/mmc’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/mtd’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/mux’: Function not implemented
+make[2]: stat: scripts/sorttable: Function not implemented
+make[2]: stat: scripts/asn1_compiler: Function not implemented
+make[2]: stat: scripts/asn1_compiler.c: Function not implemented
+make[2]: stat: include/linux/asn1_ber_bytecode.h: Function not implemented
+make[2]: stat: include/linux/asn1.h: Function not implemented
+make[2]: stat: scripts/sign-file: Function not implemented
+make[2]: stat: scripts/sign-file.c: Function not implemented
+make[2]: *** No rule to make target 'scripts/asn1_compiler.c', needed by 'scripts/asn1_compiler'.  Stop.
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** wait: Function not implemented.  Stop.
+make[2]: write error: stdout: Function not implemented
+Bad system call
+find: ‘./Documentation/devicetree/bindings/net’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/nios2’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/nvme’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/nvmem’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/openrisc’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/opp’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/pci’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/peci’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/perf’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/phy’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/pinctrl’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/pmem’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/power’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/powerpc’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/pps’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/ptp’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/pwm’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/regmap’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/regulator’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/remoteproc’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/reserved-memory’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/reset’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/riscv’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/rng’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/rtc’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/scsi’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/security’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/serial’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/serio’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/sifive’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/siox’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/slimbus’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/soc’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/sound’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/soundwire’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/spi’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/spmi’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/sram’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/staging’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/thermal’make: getcwd: Function not implemented
+: Function not implemented
+find: ‘./Documentation/devicetree/bindings/timer’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/timestamp’: Function not implemented
+make[1]: *** wait: Function not implemented.  Stop.
+find: make[1]: *** Waiting for unfinished jobs....
+‘./Documentation/devicetree/bindings/ufs’make[1]: *** wait: Function not implemented.  Stop.
+: Function not implemented
+make[1]: write error: stdout: Function not implemented
+find: ‘./Documentation/devicetree/bindings/usb’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/virtio’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/w1’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/watchdog’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/x86’: Function not implemented
+find: ‘./Documentation/devicetree/bindings/xillybus’: Function not implemented
+find: failed to read file names from file system at or below ‘.’: Function not implemented
+find: write error: Function not implemented
+make: *** [Makefile:252: __sub-make] Error 1
+make[2]: /bin/sh: Function not implemented
+scripts/Makefile.include:17: *** output directory "/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/build/gki-kernel/tools/" does not exist.  Stop.
+make[2]: write error: stdout: Function not implemented
+make[3]: scripts/Makefile.build: Function not implemented
+make[3]: *** No rule to make target 'scripts/Makefile.build'.  Stop.
+make[3]: write error: stdout: Function not implemented
+make: getcwd: Function not implemented
+xargs: cannot fork: Function not implemented
+xargs: error closing file: Function not implemented
+xargs: write error: Function not implemented
+In file included from scripts/unifdef.c:55:
+/usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include/stdlib.h:1155:10: fatal error: cannot open file '/usr/bin/../lib/gcc/aarch64-linux-gnu/13/../../../../aarch64-linux-gnu/include/bits/stdlib-float.h': Function not implemented
+ 1155 | #include <bits/stdlib-float.h>
+      |          ^
+./scripts/setlocalversion: 146: git: Function not implemented
+1 error generated.
+make[2]: *** [scripts/Makefile.host:114: scripts/unifdef] Error 1
+make[2]: write error: stdout: Function not implemented

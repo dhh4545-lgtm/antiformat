@@ -1,0 +1,6 @@
+id=antiformat
+name=AntiFormat 防格机保护
+version=v0.3.0
+versionCode=3
+author=operit
+description=内核级防格机保护：极端模式（任何进程含 root 不能打开 /dev/block，白名单系统进程编译期内定）+ afd 守护进程（卸载需错别字人机验证）+ /data/adb 保护。重启后自动恢复防护。

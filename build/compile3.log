@@ -1,0 +1,45 @@
+nohup: ignoring input
+make: Entering directory '/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/build/gki-kernel'
+  CC [M]  /data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/af_main.o
+/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/af_main.c:547:44: error: incompatible pointer types passing 'const struct file_operations *' to parameter of type 'const struct proc_ops *' [-Werror,-Wincompatible-pointer-types]
+  547 |         proc_create("status", 0444, af_proc_root, &af_status_fops);
+      |                                                   ^~~~~~~~~~~~~~~
+./include/linux/proc_fs.h:108:122: note: passing argument to parameter 'proc_ops' here
+  108 | struct proc_dir_entry *proc_create(const char *name, umode_t mode, struct proc_dir_entry *parent, const struct proc_ops *proc_ops);
+      |                                                                                                                          ^
+/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/af_main.c:548:45: error: incompatible pointer types passing 'const struct file_operations *' to parameter of type 'const struct proc_ops *' [-Werror,-Wincompatible-pointer-types]
+  548 |         proc_create("protect", 0222, af_proc_root, &af_protect_fops);
+      |                                                    ^~~~~~~~~~~~~~~~
+./include/linux/proc_fs.h:108:122: note: passing argument to parameter 'proc_ops' here
+  108 | struct proc_dir_entry *proc_create(const char *name, umode_t mode, struct proc_dir_entry *parent, const struct proc_ops *proc_ops);
+      |                                                                                                                          ^
+/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/af_main.c:549:47: error: incompatible pointer types passing 'const struct file_operations *' to parameter of type 'const struct proc_ops *' [-Werror,-Wincompatible-pointer-types]
+  549 |         proc_create("unprotect", 0222, af_proc_root, &af_unprotect_fops);
+      |                                                      ^~~~~~~~~~~~~~~~~~
+./include/linux/proc_fs.h:108:122: note: passing argument to parameter 'proc_ops' here
+  108 | struct proc_dir_entry *proc_create(const char *name, umode_t mode, struct proc_dir_entry *parent, const struct proc_ops *proc_ops);
+      |                                                                                                                          ^
+/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/af_main.c:578:45: error: call to undeclared function 'utsname'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  578 |         pr_info("[antiformat] init (kernel %s)\n", utsname()->release);
+      |                                                    ^
+/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/af_main.c:578:45: note: did you mean 'putname'?
+./include/linux/fs.h:1992:13: note: 'putname' declared here
+ 1992 | extern void putname(struct filename *name);
+      |             ^
+/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/af_main.c:578:56: error: member reference type 'int' is not a pointer
+  578 |         pr_info("[antiformat] init (kernel %s)\n", utsname()->release);
+      |                                                    ~~~~~~~~~  ^
+./include/linux/printk.h:343:34: note: expanded from macro 'pr_info'
+  343 |         printk(KERN_INFO pr_fmt(fmt), ##__VA_ARGS__)
+      |                                         ^~~~~~~~~~~
+./include/linux/printk.h:319:60: note: expanded from macro 'printk'
+  319 | #define printk(fmt, ...) printk_index_wrap(_printk, fmt, ##__VA_ARGS__)
+      |                                                            ^~~~~~~~~~~
+./include/linux/printk.h:314:19: note: expanded from macro 'printk_index_wrap'
+  314 |                 _p_func(_fmt, ##__VA_ARGS__);                           \
+      |                                 ^~~~~~~~~~~
+5 errors generated.
+make[2]: *** [scripts/Makefile.build:243: /data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/af_main.o] Error 1
+make[1]: *** [/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/build/gki-kernel/Makefile:1977: /data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel] Error 2
+make: *** [Makefile:252: __sub-make] Error 2
+make: Leaving directory '/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/build/gki-kernel'

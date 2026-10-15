@@ -1,0 +1,11 @@
+nohup: ignoring input
+make: Entering directory '/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/build/gki-kernel'
+make[2]: Circular /data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/antiformat.o <- /data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/antiformat.o dependency dropped.
+  CC [M]  /data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/ksym.o
+  CC [M]  /data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/mmuhack.o
+  LD [M]  /data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/antiformat.o
+ld.lld: error: cannot open /data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/antiformat.o: No such file or directory
+make[2]: *** [scripts/Makefile.build:438: /data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/antiformat.o] Error 1
+make[1]: *** [/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/build/gki-kernel/Makefile:1977: /data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel] Error 2
+make: *** [Makefile:252: __sub-make] Error 2
+make: Leaving directory '/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/build/gki-kernel'

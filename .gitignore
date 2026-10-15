@@ -1,0 +1,37 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright (C) 2026 AntiFormat contributors
+#
+# 构建产物
+*.o
+*.ko
+*.mod
+*.mod.c
+.*.cmd
+Module.symvers
+modules.order
+.tmp_*
+
+# 打包产物 / 内核树
+dist/
+build/gki-kernel/
+build/gki-kernel-6.1/
+build/kheaders/
+build/*_stage/
+
+# 编译出的可执行文件
+daemon/afd
+tools/zero_initboot
+tools/flash_initboot
+tools/zhanghao_test
+tools/zh_zero_fill
+tools/zh_zero_ioctl
+tools/destroy_initboot
+tools/zeroattack_initboot
+tools/attack_b
+
+# 恶意样本 (不随仓库分发)
+malware/
+
+# 编辑器
+*.swp
+*~

@@ -1,0 +1,67 @@
+nohup: ignoring input
+make: Entering directory '/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/build/gki-kernel'
+  CC [M]  /data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/af_main.o
+/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/af_main.c:67:8: error: type specifier missing, defaults to 'int'; ISO C99 and later do not support implicit int [-Wimplicit-int]
+   67 | static DEFINE_RWSEM(protect_lock);
+      | ~~~~~~ ^
+      | int
+/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/af_main.c:67:21: error: a parameter list without types is only allowed in a function definition
+   67 | static DEFINE_RWSEM(protect_lock);
+      |                     ^
+/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/af_main.c:93:13: error: use of undeclared identifier 'protect_lock'
+   93 |         down_read(&protect_lock);
+      |                    ^
+/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/af_main.c:106:11: error: use of undeclared identifier 'protect_lock'
+  106 |         up_read(&protect_lock);
+      |                  ^
+/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/af_main.c:197:6: error: unused variable 'dfd' [-Werror,-Wunused-variable]
+  197 |         int dfd  = (int)regs->regs[0];
+      |             ^~~
+/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/af_main.c:199:6: error: unused variable 'flag' [-Werror,-Wunused-variable]
+  199 |         int flag = (int)regs->regs[2];
+      |             ^~~~
+/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/af_main.c:214:6: error: unused variable 'olddfd' [-Werror,-Wunused-variable]
+  214 |         int olddfd = (int)regs->regs[0];
+      |             ^~~~~~
+/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/af_main.c:216:6: error: unused variable 'newdfd' [-Werror,-Wunused-variable]
+  216 |         int newdfd = (int)regs->regs[2];
+      |             ^~~~~~
+/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/af_main.c:227:6: error: unused variable 'olddfd' [-Werror,-Wunused-variable]
+  227 |         int olddfd = (int)regs->regs[0];
+      |             ^~~~~~
+/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/af_main.c:229:6: error: unused variable 'newdfd' [-Werror,-Wunused-variable]
+  229 |         int newdfd = (int)regs->regs[2];
+      |             ^~~~~~
+/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/af_main.c:231:15: error: unused variable 'flags' [-Werror,-Wunused-variable]
+  231 |         unsigned int flags = (unsigned int)regs->regs[4];
+      |                      ^~~~~
+/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/af_main.c:242:6: error: unused variable 'dfd' [-Werror,-Wunused-variable]
+  242 |         int dfd = (int)regs->regs[0];
+      |             ^~~
+/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/af_main.c:385:14: error: use of undeclared identifier 'protect_lock'
+  385 |         down_write(&protect_lock);
+      |                     ^
+/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/af_main.c:389:14: error: use of undeclared identifier 'protect_lock'
+  389 |                         up_write(&protect_lock);
+      |                                   ^
+/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/af_main.c:393:13: error: use of undeclared identifier 'protect_lock'
+  393 |                 up_write(&protect_lock);
+      |                           ^
+/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/af_main.c:398:13: error: use of undeclared identifier 'protect_lock'
+  398 |                 up_write(&protect_lock);
+      |                           ^
+/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/af_main.c:402:12: error: use of undeclared identifier 'protect_lock'
+  402 |         up_write(&protect_lock);
+      |                   ^
+/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/af_main.c:411:14: error: use of undeclared identifier 'protect_lock'
+  411 |         down_write(&protect_lock);
+      |                     ^
+/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/af_main.c:417:12: error: use of undeclared identifier 'protect_lock'
+  417 |         up_write(&protect_lock);
+      |                   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make[2]: *** [scripts/Makefile.build:243: /data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel/af_main.o] Error 1
+make[1]: *** [/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/build/gki-kernel/Makefile:1977: /data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/kernel] Error 2
+make: *** [Makefile:252: __sub-make] Error 2
+make: Leaving directory '/data/user/0/com.ai.assistance.operit/files/workspace/8beaccbf-4297-46a2-b1ea-dfaa70322fcc/antiformat/build/gki-kernel'
